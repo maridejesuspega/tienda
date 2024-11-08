@@ -1,70 +1,72 @@
+/* Comentario */
+
 * {
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
-    font-family: "Brush Script MT", cursive;
-    padding: 90px 20px 0;
+    font-family: sans-serif;
+    padding: 80px 20px 0;
+    background-color: bisque;
 }
 
-/* Estilo para el encabezado con colores pastel */
-.header {
-    background-color: #F5B7B1; /* Fondo rosa pastel */
-    height: 80px;
+header {
     position: fixed;
+    background-color: blue;    
     top: 0;
     left: 0;
-    width: 100%;
+    height: 80px;
+    width: 100%
 }
 
-/* Estilo de la barra de navegación */
-.nav {
-    display: flex;
-    justify-content: space-between;
-    max-width: 992px;
-    margin: 0 auto;
+aside {
+    position: fixed;
+    background-color: aquamarine;    
+    top: 80px;
+    left: 0;
+    bottom: 20px;
+    width: 20%
 }
 
-/* Estilo de los enlaces de navegación */
-.nav-link {
-    color: #FDFEFE; /* Color de texto blanco */
+section {
+    overflow-y: scroll;
+    position: fixed;
+    background-color: bisque;    
+    top: 80px;
+    left: 20%;
+    bottom: 20px;
+    width: 80%
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;        
+    text-align: center;
+    background-color: yellow;
+    color: red;
+}
+
+a {
     text-decoration: none;
+    background-color: green;
+    color: white;
 }
 
-/* Estilo para el logo con colores pastel */
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 40px;
-    line-height: 80px;
-    color: #AF7AC5; /* Color morado pastel */
+a:hover {
+    background-color: black;
+    color: white;
 }
 
-/* Menú de navegación */
-.nav-menu {
-    display: flex;
-    margin-right: 40px;
-    list-style: none;
+tbody tr:nth-child(odd) {
+    background-color: blue;
+    color: white
 }
 
-/* Elementos del menú de navegación */
-.nav-menu-item {
-    font-size: 18px;
-    margin: 0 10px;
-    line-height: 80px;
-    width: max-content;
-}
-
-/* Efecto hover con transición de color */
-.nav-menu-link:hover {
-    background-color: #F9E79F; /* Color amarillo pastel */
-    transition: 0.5s;
-}
-
-/* Estilo para los enlaces del menú */
-.nav-menu-link {
-    padding: 8px 12px;
-    border-radius: 4px;
-    color: #AF7AC5; /* Color morado pastel */
+tbody tr:nth-child(even) {
+    background-color: black;
+    color: white
 }
